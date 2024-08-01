@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:q,mm:v}=window,j=new q.Toolbar;j.attach(v);const we=j.render();we.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(we)})})()</script><script>((f,d,h,u)=>{const g=f();window.mm=g.Markmap.create("svg#mindmap",(d||g.deriveOptions)(u),h)})(()=>window.markmap,null,{"content":"Manejo de Rutas y Datos en Flask","children":[{"content":"Flask","children":[{"content":"<strong>Framework</strong>: Microframework para aplicaciones web en Python","children":[],"payload":{"lines":"3,5"}}],"payload":{"lines":"1,2"}},{"content":"Manejo de Rutas","children":[{"content":"Decorador <code>@app.route</code>","children":[{"content":"Define la URL y la función correspondiente","children":[],"payload":{"lines":"9,10"}},{"content":"Ejecuta la función cuando se accede a la URL","children":[],"payload":{"lines":"10,12"}}],"payload":{"lines":"7,8"}},{"content":"Ejemplo Básico","children":[{"content":"<pre><code class=\"language-python\"><span class=\"hljs-meta\">@app.route(<span class=\"hljs-params\"><span class=\"hljs-string\">'/'</span></span>)</span>\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">home</span>():\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">\"Hello, World!\"</span>\n</code></pre>","children":[]}],"payload":{"lines":"12,13"}},{"content":"Parámetros en la URL","children":[{"content":"<strong>Parámetros Variables</strong><pre><code class=\"language-python\"><span class=\"hljs-meta\">@app.route(<span class=\"hljs-params\"><span class=\"hljs-string\">'/user/&lt;username&gt;'</span></span>)</span>\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">show_user_profile</span>(<span class=\"hljs-params\">username</span>):\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">f'User: <span class=\"hljs-subst\">{username}</span>'</span>\n</code></pre>","children":[],"payload":{"lines":"22,28"}},{"content":"<strong>Tipos de Datos</strong><pre><code class=\"language-python\"><span class=\"hljs-meta\">@app.route(<span class=\"hljs-params\"><span class=\"hljs-string\">'/post/&lt;int:post_id&gt;'</span></span>)</span>\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">show_post</span>(<span class=\"hljs-params\">post_id</span>):\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">f'Post ID: <span class=\"hljs-subst\">{post_id}</span>'</span>\n</code></pre>","children":[],"payload":{"lines":"28,35"}}],"payload":{"lines":"20,21"}},{"content":"Métodos HTTP","children":[{"content":"<strong>GET y POST</strong><pre><code class=\"language-python\"><span class=\"hljs-meta\">@app.route(<span class=\"hljs-params\"><span class=\"hljs-string\">'/submit'</span>, methods=[<span class=\"hljs-string\">'GET'</span>, <span class=\"hljs-string\">'POST'</span>]</span>)</span>\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">submit</span>():\n    <span class=\"hljs-keyword\">if</span> request.method == <span class=\"hljs-string\">'POST'</span>:\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'Form Submitted!'</span>\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'Submit the form'</span>\n</code></pre>","children":[],"payload":{"lines":"37,46"}}],"payload":{"lines":"35,36"}},{"content":"Redireccionamientos","children":[{"content":"<strong><code>redirect</code> y <code>url_for</code></strong><pre><code class=\"language-python\"><span class=\"hljs-meta\">@app.route(<span class=\"hljs-params\"><span class=\"hljs-string\">'/'</span></span>)</span>\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">index</span>():\n    <span class=\"hljs-keyword\">return</span> redirect(url_for(<span class=\"hljs-string\">'home'</span>))\n</code></pre>","children":[],"payload":{"lines":"48,55"}}],"payload":{"lines":"46,47"}}],"payload":{"lines":"5,6"}},{"content":"Made with Love ❤️ by <a href=\"https://github.com/jelambrar96\">@jelambrar96</a>","children":[{"content":"<a href=\"https://www.buymeacoffee.com/jelambrar1\">\"Buy Me A Coffee\"</a>","children":[],"payload":{"lines":"56,57"}}],"payload":{"lines":"55,56"}}]},{"colorFreezeLevel":2})</script>
+</body>
+</html>
